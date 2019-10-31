@@ -1,0 +1,37 @@
+<div class="jumbotron">
+    <div class="container">
+      <ngb-alert type="success" [dismissible]="false">
+        Виджеты добавлены
+      </ngb-alert>
+    </div>
+  </div>
+  
+  <div class="container">
+    <p>
+      Лаба засчитана на:
+      <ngb-progressbar showValue="true" type="success" [value]="90">
+      </ngb-progressbar>
+    </p>
+  </div>
+  
+  <div class="container">
+    <ngb-tabset>
+      <ngb-tab title="Angular">
+          <ng-template ngbTabContent>
+            <p class="mt-4">
+              <button type="button"
+                      class="btn btn-secondary"
+                      placement="bottom"
+                      ngbPopover="I'm ngb-button"
+                      popoverTitle="Very good">
+                Нажми на меня
+              </button>
+            </p>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Это">
+        </ngb-tab>
+        <ngb-tab title="Круто">
+        </ngb-tab>
+      </ngb-tabset>
+  </div>
